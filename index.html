@@ -24,6 +24,8 @@
             /* หมุน 90 องศา และซูม 1.5 เท่า */
             display: inline-block;
         }
+
+        
     </style>
 
 
@@ -67,7 +69,7 @@
                 <a class="link-body-emphasis" href="https://xwsen.github.io/A--/"
                     style="text-decoration: none;">การศึกษา</a>
 
-                <a class="link-body-emphasis" href="https://xwsen.github.io/D--R/" style="text-decoration: none;">ผลงาน</a>
+                <a class="link-body-emphasis" href=" " style="text-decoration: none;">ผลงาน</a>
 
                 <a class="link-body-emphasis" href=" " style="text-decoration: none;">กิจกรรม</a>
 
@@ -83,16 +85,40 @@
                 <h2 class="featurette-heading fw-normal lh-1">Spiral staircase. <span
                         class="text-body-secondary">บันไดวน. </span></h2>
                 <br>
-                <p class="lead">งานออกเเบบเสารองรับบันไดวนสูง จุดประสงค์ในการออกเเบบ คือ หาขนาดของเสาโดยมีบันไดวนเป็นวงกลม รัศมีเท่ากัน  มีระยะในแต่ละขั้นของบันไดเท่ากัน จากด้านบนสุดจนถึงล่างสุด เพื่อดูว่าเสาเหล็กวงกลมตันสามารถรับน้ำหนักกดสูงสุดได้กี่ kg
+                <p class="lead"> งานออกแบบบันไดวน
+                    - แนวคิด : ใช้เสาเหล็กกลมสูง 4 m เชื่อมต่อกับบันได
+                    ใช้แผ่นเหล็กวนเป็นวงกลมมีรัศมีเท่ากันเมื่อวัดจากศูนย์กลางของเสาเหล็ก
+                    มีระยะในแนวดิ่งของบันไดเท่ากันโดยวัดจากด้านบนสุดจนถึงด้านล่างของเสามีระยะ 4 m ดังรูป
+                    <br>
+                    <br>
+                    - แนวคิดในการคำนวณ : <br> ใช้ความรู้ด้านฟิสิกส์ที่เกี่ยวกับ แรง,น้ำหนัก ในการคำนวณ
+                    การออกแบบเสาเหล็ก
+                    ( กำหนดให้ น้ำหนักเฉลี่ยของคน = 60 kg , P =
+                    แรงกดในแนวดิ่งของเสาที่รองรับบันไดในแต่ละขั้น,มีจำนวนขั้นบันไดทั้งหมด = 15
+                    ขั้น,น้ำหนักรวมของบันไดในแต่ละขั้น = 0.5 kg, F =
+                    ค่าหน่วยแรงสูงสุดที่วัสดุหรือโครงสร้างสามารถรับได้อย่างปลอดภัยโดยไม่เกิดความเสียหายถาวรมีค่า 960
+                    kg/m*2 )
+                <p class="lead">วิธีคิด ( สมมุติให้คนยืนอยู่บนขั้น 2 ขั้นบันได )</p>
+                <br>
+                <p class="lead">
+                    P = น้ำหนักรวมของบันไดในแต่ละขั้น + แรงกดบนขั้นบันได 2 ขั้นบันได <p></p>
+                    P = (15 x 0.5) + (60 x 2) = (7.5 + 120 ) = 127.5 kg      <p></p>
+                
+                    จากสูตร A = P/F <p></p>
+              A = 127.5/960 = 0.1328125 m*2 =  0.133 m*2 <p></p>
+    
+หารัศมีของเสา จากสูตร A = πr*2 <p></p>
+                       จะได้  0.133/π =  r*2 ----- >   r*2    ≈    0.0423  ----- >   r   ≈ 0.21 m  <p></p>
+                       <br>
+                            
 
-วิธีคิดคำนวณการรับน้ำหนักของเสา
-- คำนวณหาพื้นที่หน้าตัด-ขนาดของเสาเหล็กรูปพรรณ วงกลมตัน
-   P = เเรงกดที่กระทำบนเสา = 25 x 60 x 1.25 = 1,875 kg ( 25 -> จำนวนขั้นบันได, 60 -> น้ำหนักเฉลี่ยของคนบนบันได, 1.25 -> ค่าความปลอดภัยของการรับน้ำหนักของเสา 25 %  ) 
-A = พื้นที่หน้าตัดของเสา
-Allowble Stress ของเหล็กรูปพรรณ = 0.40 fy (fy=2400 ksc.) = 0.40x2400 = 960 kg./sq.cm (P/A) = 960
-A=1,875/960 =1.953125 sq.cm  เลือกใช้เหล็กรูปพรรณวงกลมตันขนาด = √1.953125 ≈ 1.4 cm
-ดังนั้นใช้เหล็กวงกลมตันขนาด 1.5x1.5 cm A = 2.25 sq.cm >1.953125 sq.cm 
-สรุปเสาเหล็กกลมตันขนาด A = 2.25 sq.cm.รับน้ำหนักกดสูงสุด = 2.25x960 = 2160 kg </p>
+                           <p class="lead"> จะได้รัศมี ≈ 0.21 m และขนาดเส้นผ่านศูนย์กลางของเสา ≈ 0.42 m 
+สรุป   
+,	ใช้เหล็กกลมขนาด = 0.42 m 
+,	ความสูงของเสา = 4 m 
+,	ระยะบันไดในแต่ละขั้น = 0.25 m </p>
+
+                    
 
 
                 <br>
@@ -102,7 +128,7 @@ A=1,875/960 =1.953125 sq.cm  เลือกใช้เหล็กรูปพ
 
             </div>
             <div class="col-md-5">
-                <img src="https://i.pinimg.com/736x/bc/6a/ca/bc6acaec17bde7de3ac15f22b93b3b52.jpg"
+                <img src="https://i.pinimg.com/736x/31/af/a9/31afa92ca1a312505d0b00762b48d0cc.jpg"
                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
                     preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -171,12 +197,12 @@ A=1,875/960 =1.953125 sq.cm  เลือกใช้เหล็กรูปพ
 
         <div class="row featurette">
             <div class="col-md-5">
-                <img src="https://i.pinimg.com/736x/05/bf/b6/05bfb682cf1b3b5c63dae98e2e1b4fee.jpg" alt="Your Image Description" class="featurette-image img-fluid mx-auto" width="500"
-                    height="500">
+                <img src="https://i.pinimg.com/736x/05/bf/b6/05bfb682cf1b3b5c63dae98e2e1b4fee.jpg"
+                    alt="Your Image Description" class="featurette-image img-fluid mx-auto" width="500" height="500">
             </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Modern house. </h2>
-                        
+
                 <br>
                 <p class="lead">บ้านหลังนี้ได้แรงบันดาลใจจากความชอบในเกมแนว Sandbox อย่าง Minecraft
                     ซึ่งความโดดเด่นของรูปทรงเหลี่ยมที่เรียบง่ายและชัดเจนในเกม
@@ -184,7 +210,7 @@ A=1,875/960 =1.953125 sq.cm  เลือกใช้เหล็กรูปพ
                     ให้ความรู้สึกทันสมัยแต่ยังคงสะท้อนความชื่นชอบส่วนตัวได้อย่างลงตัว.</p>
             </div>
 
-<br>
+            <br>
             <hr class="featurette-divider">
 
 
